@@ -14,7 +14,7 @@ print(str(sys.argv))
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE
-print(os.name)
+print(str(sys.osname))
 import platform
 print(platform.system())
 
