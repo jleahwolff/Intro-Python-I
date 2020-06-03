@@ -8,11 +8,13 @@ Take a look at https://docs.python.org/3/tutorial/datastructures.html#list-compr
 for more info regarding list comprehensions.
 """
 
-# Write a list comprehension to produce the array [1, 2, 3, 4, 5]
-
+# Write a list comprehension to produce the list [1, 2, 3, 4, 5]
 y = [1, 2, 3, 4, 5]
 
-print (y)
+  #create an empty list
+new_list = []
+new_list.append(str(y))
+print(new_list)
 
 # Write a list comprehension to produce the cubes of the numbers 0-9:
 # [0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
@@ -27,7 +29,7 @@ print(squares)
 
 a = ["foo", "bar", "baz"]
 
-ups = [str.upper() for str in a]
+ups = [word.upper() for word in a]
 
 print(ups)
 
@@ -37,6 +39,6 @@ print(ups)
 x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
-y = ['']
+y=[num for num in x if int(num) % 2 == 0]
 
 print(y)

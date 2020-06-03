@@ -9,6 +9,25 @@ overview: https://stackoverflow.com/a/509295
 Use Python's slice syntax to achieve the following:
 """
 
+"""
+It's pretty simple really:
+
+a[start:stop]  # items start through stop-1
+a[start:]      # items start through the rest of the array
+a[:stop]       # items from the beginning through stop-1
+a[:]           # a copy of the whole array
+There is also the step value, which can be used with any of the above:
+
+a[start:stop:step] # start through not past stop, by step
+The key point to remember is that the :stop value represents the first value that is not in the selected slice. So, the difference between stop and start is the number of elements selected (if step is 1, the default).
+
+The other feature is that start or stop may be a negative number, which means it counts from the end of the array instead of the beginning. So:
+
+a[-1]    # last item in the array
+a[-2:]   # last two items in the array
+a[:-2]   # everything except the last two items
+"""
+
 a = [2, 4, 1, 7, 9, 6]
 
 # Output the second element: 4:
@@ -40,5 +59,5 @@ print(all_but_five)
 s = "Hello, world!"
 
 # Output just the 8th-12th characters: "world"
-eigth_twelve = s[7:12]
+eigth_twelve = s[7:11]
 print(eigth_twelve)

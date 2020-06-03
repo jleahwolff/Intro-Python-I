@@ -2,17 +2,18 @@
 
 # YOUR CODE HERE
 
-x = 4
 
-def is_even(x):
-    if x % 2 is 0:
-        return print(f'{x} is Even')
+
+def is_even(num):
+    if num % 2 is 0:
+        print(True)
+        
     else:
-        return print('Odd')
+        print(False)
 
 # Read a number from the keyboard
-num = input('Enter a number:')
-num = int(num)
+num = input('Enter a number: ')
+# num = int(num)
 
 print (is_even(num))
 
@@ -20,8 +21,10 @@ print (is_even(num))
 
 # YOUR CODE HERE
 
-def is_odd(number):
-    if number % 2 is 0:
+def is_odd(num2):
+    if num2 % 2 is 0:
         print("Even!")
     else:
         print("Odd")
+
+print(is_odd(num))
